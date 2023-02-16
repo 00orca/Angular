@@ -1,4 +1,4 @@
-<div class="card ticket" > <!--(click)="selectTicket()"-->
+<div class="card ticket" (click)="selectTicket()">
   <!-- we use the {{ }} syntax to display the data, more info: https://angular.io/guide/displaying-data-->
   <h3>Titre : {{ticket.title}}</h3>
   <i class="fas fa-calendar-alt"></i> {{ticket.date | date: 'shortTime'}} &nbsp;&nbsp;
@@ -16,5 +16,5 @@
   {{ticket.major}}
   <br>
   <!-- delete button -->
-  <button class="btn-custom" (click)="deleteTicket(ticket.id)">Supprimer</button>
+  <button class="btn-custom" (click)="deleteTicket()">Supprimer</button>
 </div>
