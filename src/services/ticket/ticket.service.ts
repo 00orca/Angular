@@ -32,8 +32,8 @@ export class TicketService {
     this.tickets$.next(this.ticketList);
   }
 
-  deleteTicket(ticket: Ticket) {
-    this.ticketList.splice(this.ticketList.indexOf(ticket), 1);
+  archiveTicket(ticket: Ticket) {
+    ticket.archived = true;
     this.tickets$.next(this.ticketList);
   }
 }
