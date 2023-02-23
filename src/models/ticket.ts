@@ -1,3 +1,5 @@
+import { Student } from "./student";
+
 export enum Major {
   SI = 'SI',
   GE = 'GE',
@@ -7,11 +9,12 @@ export enum Major {
   GS = 'GS',
   GT = 'GT',
 }
+  
 export interface Ticket {
   title?: string;
   description?: string;
   date?: Date;
-  student?: string;
+  student?: Student;
   major?: Major;
   archived?: boolean;
 }

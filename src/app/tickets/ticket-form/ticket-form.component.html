@@ -10,6 +10,15 @@
     <input class="input-custom" type="text" id="description" [formControlName]="'description'">
   </label>
   <br>
+  <label for="student">
+    Student <br>
+    <select name="student-field" id="student" [formControlName]="'student'">
+      <option value="" disabled selected>Choisis un étudiant</option>
+      <option *ngFor="let currentStudent of STUDENT_LIST" [value]="currentStudent">
+        {{currentStudent.id}} - {{currentStudent.firstName}} {{currentStudent.lastName}}
+      </option>
+    </select>
+  </label>
   <label for="major">
     Filière <br>
     <select name="major-field" id="major" [formControlName]="'major'">
