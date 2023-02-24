@@ -1,25 +1,7 @@
 import { Major, Ticket } from '../models/ticket';
-import { Student } from '../models/student';
+import { STUDENTS_MOCKED } from 'src/mocks/students.mock';
 
 const dateToday: Date = new Date();
-
-export const STUDENTS_MOCKED: Student[] = [
-  {
-    id: 1,
-    firstName: 'Paul',
-    lastName: 'Dupont'
-  },
-  {
-    id: 2,
-    firstName: 'Jean-Yves',
-    lastName: 'Delmotte'
-  },
-  {
-    id: 3,
-    firstName: 'Remi',
-    lastName: 'Pourtier'
-  }
-];
 
 export const TICKETS_MOCKED: Ticket[] = [
   {
